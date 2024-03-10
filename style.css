@@ -176,7 +176,7 @@ a {font:12px Arial; text-decoration:none;}
 	/* Hide the hamburger menu by default */
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:600px) {
     body {
         background: url('images/body-bg.jpg') repeat-x;
     }
