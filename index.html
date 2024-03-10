@@ -1,0 +1,119 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<img src="images/logo.jpg" />
+		</div>
+		<div id="hamburger-menu">
+			<!-- Font Awesome icon for the hamburger menu -->
+			<i class="fa fa-bars"></i>
+		</div>
+		<div id="nav">
+			<ul>
+				<li><a href="#" id="home">HOME</a></li>
+				<li><a href="#" id="about">ABOUT SMASHINGDZINE</a></li>
+				<li><a href="#" id="services">OUR SERVICES</a></li>
+				<li><a href="#" id="portfolio">OUR PORTFOLIO</a></li>
+				<li><a href="#" id="blog">BLOG</a></li>
+				<li><a href="#" id="contact">CONTACT US</a></li>
+			</ul> 
+		</div>
+	</div>
+
+	<div id="banner">
+		<div id="slideshow">
+			<img src="images/banner-img.jpg" />
+		</div>
+
+		<div id="quick-quote">
+			<h2> Quick Quote </h2>
+			<form>
+				<span>Your Full Name:</span> <br>
+				<input type="text" id="in" /> <br>
+
+				<span>Email Address:</span> <br>
+				<input type="text" id="in" /> <br>
+
+				<span>What Are You Looking For:</span> <br>
+				<textarea id="in" rows="5"></textarea> <br>
+
+				<input type="submit" value="Submit" id="btn"> 
+			</form>
+		</div>
+	</div>
+
+	<div id="main">
+		<div class="asd">
+			<div class="one"><a href="#">About</a> SmashingDzine</div>
+			<div><p>Lorem ipsum dolor sit amet, con- sectetur 
+				adipisicing elit, sed do eiusmod tempor incididunt 
+				ut labore et dolore magna aliqua. Ut enim ad minim
+				veniam, quis nos- trud exercitation ullamco laboris
+			</p></div>
+			<div class="shape"></div>
+			<div class="read-more">Read more</div>
+		</div>
+		 
+		<div class="os">
+			<div class="two"><a href="#">Our</a> Services</div>
+			<div><p>Lorem ipsum dolor sit amet, con- sectetur 
+				adipisicing elit, sed do eiusmod tempor incididunt 
+				ut labore et dolore magna aliqua. Ut enim ad minim
+				veniam, quis nos- trud exercitation ullamco laboris
+			</p></div>
+			<div class="shape"></div>
+			<div class="read-more">Read more</div>
+
+		</div>
+
+		<div class="op">
+			<div class="three"><a href="#">Our</a> Portfolio</div>
+			<div><p>Lorem ipsum dolor sit amet, con- sectetur 
+				adipisicing elit, sed do eiusmod tempor incididunt 
+				ut labore et dolore magna aliqua. Ut enim ad minim
+				veniam, quis nos- trud exercitation ullamco laboris
+			</p></div>
+			<div class="shape"></div>
+			<div class="read-more">Read more</div>
+		</div>
+		</div>
+	<div id="footer">
+		<div class="copyright"> Copyright 2010 SmashingDzine |</div>
+		<div class="privacy-policy">Privacy Policy</div>
+		<div class="footer-menu">
+			<nav>
+				<ul>
+					<li><a href="#" id="home">HOME</a></li>
+					<li><a href="#" id="about">ABOUT SMASHINGDZINE</a></li>
+					<li><a href="#" id="services">OUR SERVICES</a></li>
+					<li><a href="#" id="portfolio">PORTFOLIO</a></li>
+					<li><a href="#" id="blog">BLOG</a></li>
+					<li><a href="#" id="contact">CONTACT US</a></li>
+				</ul>
+			</nav>
+		</div>		
+		<div class="enter-email">Enter your email to subscribe to our RSS Updates</div>
+		<div class="input-field"><input type=""></div>
+		<button>Subscribe</button>
+	</div>
+
+
+</div> <!-- end of wrapper -->
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+    var menuToggle = document.getElementById('hamburger-menu');
+    var navMenu = document.getElementById('nav');
+
+    menuToggle.addEventListener('click', function() {
+        navMenu.classList.toggle('show');
+    });
+});
+</script>
+</body>
+</html>
+

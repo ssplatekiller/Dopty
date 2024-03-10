@@ -1,0 +1,370 @@
+body{
+	width:100%; 
+	margin:0px; 
+	background:url('images/body-bg.jpg') repeat-x;
+}
+
+/*header style*/
+#wrapper {width:1000px; margin:0 auto; }
+
+#logo {margin-top:34px; margin-bottom:40px;}
+
+#nav ul {margin-left:-55px;}
+
+#nav li{list-style:none; display:inline-block; margin-left:15px;}
+
+a {font:12px Arial; text-decoration:none;}
+
+#nav #home:link {
+	color:white;
+	background: url('images/nav-left.jpg') no-repeat left, url('images/nav-right.jpg') no-repeat right, url('images/nav-mid.jpg') repeat-x;
+	padding:9px 20px;
+}
+
+#nav #home:visited { color:white;}
+
+#nav a:hover {
+	color:white;
+	background: url('images/nav-left.jpg') no-repeat left, url('images/nav-right.jpg') no-repeat right, url('images/nav-mid.jpg') repeat-x;
+	padding:8px 20px;
+}
+
+/*banner style*/
+#banner {background:white; margin-top:45px; height:363px;}
+
+#banner img {margin:10px; float:left;}
+
+#quick-quote {
+	background:url('images/form-bg.jpg') repeat-x;
+	width:300px;
+	float:left;
+	margin-top:10px;
+	padding:2px 19px;
+}
+
+#quick-quote h2{color:white; font:20px "Trebuchet MS";}
+#quick-quote span{
+	color:white;
+	font:12px "Trebuchet MS";
+	line-height: 30px;
+}
+
+#quick-quote #in{
+	border:5px solid white;
+	border-radius:5px;
+	font:12px "Trebuchet MS";
+	width:300px;
+}
+
+#quick-quote #btn {
+	background-image:linear-gradient(#757474, black);
+	margin-top:13px;
+	width:100px;
+	padding:8px;
+	font:12px "Trebuchet MS";
+	color:white;
+}
+
+/* main */
+#main{
+	display: flex;
+	width: 1010px;
+	height: 210px;
+	margin-top: 80px;
+}
+
+#main .shape{
+	width: 100px;
+	height: 100px;
+	background-color: #424242;
+	position: relative;
+	top: -110px;
+	left: 200px;
+	outline-style: solid;
+	outline-color: rgb(188, 220, 249);
+}
+
+#main p{
+	width: 65%;
+	font-size: 14px;
+}
+
+#main .read-more{
+	text-decoration: underline;
+	margin-top: -100px;
+}
+
+#main .one, .two, .three{
+	font-size: 20px;
+
+}
+
+#main .one a, .two a, .three a{
+	font-size: 20px;
+	color: rgb(178, 212, 69);
+}
+
+#main .asd, .os, .op{
+	background-color: seashell;
+	padding: 10px;
+	border-radius: 10px;
+	margin: 10px;
+}
+/*main shortened*/
+
+#footer{
+	background-image: url(images/footer-bg.jpg);
+	background-repeat: repeat-x;
+	width: 100%;
+	left: 0%;
+	height: 100px;
+	position: absolute;
+	padding: 20px;
+	color: azure;
+	margin-top: 20px;
+}
+
+#footer .privacy-policy{
+	text-decoration: underline;
+	margin-top: -19px;
+	margin-left:220px;
+}
+
+#footer nav ul{
+    display: flex;
+    align-items: center;
+	list-style: none;
+}
+
+#footer nav ul li{
+	margin-right: 20px;
+	text-decoration: none;
+}
+
+#footer nav ul li a{
+	color: #dae6f8;
+
+}
+
+.footer-menu nav ul li:not(:last-child)::after {
+	content: "/";
+	margin-left: 5px; 
+}
+
+#footer .enter-email{
+	float: right;
+	margin-top: -75px;
+}
+
+#footer .input-field{
+	float: right;
+	margin-top: -50px;
+	margin-right: 150px;
+}
+
+#footer button{
+	float: right;
+	margin-top: -55px;
+	margin-right: 70px;
+	background-color: #757474;
+	border-radius: 5px;
+	height: 30px;
+}
+
+#hamburger-menu {
+    display: none; 
+	/* Hide the hamburger menu by default */
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background: url('images/body-bg.jpg') repeat-x;
+    }
+    
+    #wrapper {
+        width: 100%;
+        margin: 0;
+    }
+
+/*header*/    
+	#header-content {
+		display: flex;
+	}
+
+	#logo {
+		float: right;
+		margin-right: 120px;
+		margin-top: 0px;
+	}
+
+	#hamburger-menu {
+		display: block; 
+		/* Show the hamburger menu on mobile devices */		
+		margin-top: 30px;
+		margin-left: 50px;
+	}
+
+	#hamburger-menu i {
+		display: block;
+		font-size: 36px; 
+		color: black; 
+		cursor: pointer;
+	}
+
+/*menu*/
+	#nav {
+		display: none;
+		position: absolute;
+		left: 0;
+		width: 42%; 
+		background-color: #dae6f8; 
+		padding: 20px; 
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+		transition: all 0.3s ease; 
+	}
+	
+	#nav ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	
+	#nav ul li {
+		padding: 10px 0;
+		display: block; 
+	}
+	
+	#nav ul li a {
+		text-decoration: none;
+		color: #333;
+		font-weight: bold; 
+	}
+	
+	#nav.show {
+		display: block;
+		opacity: 1; 
+	}
+	
+
+    #banner {
+        margin-top: 30px;
+        height: auto;
+    }
+    
+    #banner img {
+        margin: 10px auto;
+        float: none;
+    }
+    
+	/**/
+    #quick-quote {
+        width: 100%;
+        float: none;
+        margin-top: 10px;
+    }
+    
+    #quick-quote h2 {
+        text-align: center;
+    }
+    
+    #quick-quote span {
+        display: block;
+        text-align: center;
+    }
+    
+    #quick-quote #in {
+        width: 80%;
+		margin-left: 7%;
+		margin-top: -20px;
+    }
+    
+    #quick-quote #btn {
+        width: 40%;
+		margin-left: 28%;
+    }
+    
+    #main {
+        width: 100%;
+        margin-top: 50px;
+		height: auto;
+    }
+    
+    #main .shape {
+        width:100px;
+        height: 100px;
+        top: 0;
+        left: 0;
+        margin: 0 auto 20px;
+    }
+    
+    #main p {
+        width: 90%;
+        margin: 0 auto 20px;
+    }
+    
+    #main .read-more {
+        margin-top: 0;
+    }
+    
+    #main .one, .two, .three {
+        font-size: 16px;
+    }
+    
+    #main .one a, .two a, .three a {
+        font-size: 16px;
+    }
+    
+    #main .asd, .os, .op {
+        padding: 5px;
+        margin: 5px;
+    }
+    
+	/**/	
+    #footer {
+        width: 100%;
+        left: 0;
+        height: 180px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    #footer .privacy-policy {
+        margin-left: 220px;
+		
+    }
+    
+    #footer nav ul {
+        list-style: none;
+    }
+    
+    #footer nav ul li {
+		margin-left: -5px;
+		margin-top: -10px;
+	}
+
+	.footer-menu nav ul li:not(:last-child)::after {
+		content: "/";
+		margin-left: 5px; 
+	}
+
+	#footer nav ul li a{
+		color: #dae6f8;
+    }
+  
+	#footer .enter-email{
+		margin-top: -10px;
+		float: left;
+	}
+
+	#footer .input-field{
+		margin-top: -10px;
+		margin-right: 120px;
+	}
+
+    #footer button {
+        width: auto;
+		margin-top: -20px;
+		height: auto;
+		margin-right: 20px;
+    }
+}
